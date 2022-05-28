@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<html lang="en">
+<title>AGM Notes</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <head>
 <style>
-body {
-    background-color: purple;
-}
-a:link {
-    color: black;
-    text-decoration: none;
-}
-a:visited {
-    color: turquoise;
-    text-decoration: none;
-}
-a:hover {
-    color: blue;
-    text-decoration: none;
-}
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 li {
-    float: center;
+  float: center;
 }
-li a {
-    display: block;
-    padding: 8px;
-    background-color: green;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 22px 60px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 </head>
+<body>
 <ul>
-    <li><a href="https://agm.finlay.ga">AGM Notes</a></li>
-    <li><a href="https://beavers.finlay.ga">Beaver Coloney</a></li>
-    <li><a href="https://cubs.finlay.ga">Cub Pack</a></li>
-    <li><a href="https://scouts.finlay.ga">Scout Troop</a></li>
+	   <li class="dropdown">
+    <a href="https://company.finlay.gq" class="dropbtn">HOME</a>
+    <div class="dropdown-content">
+     <li class="dropdown">
+  <li class="dropdown">
+    <a href="https://agm.finlay.ga" class="dropbtn">AGM Notes</a>
+    <div class="dropdown-content">
+     <li class="dropdown">
+    <a href="https://beavers.finlay.ga" class="dropbtn">Beaver Coloney</a>
+    <div class="dropdown-content">
+      <li class="dropdown">
+    <a href="https://cubs.finlay.ga" class="dropbtn">Cub Pack</a>
+    <div class="dropdown-content">
+      <li class="dropdown">
+    <a href="https://scouts.finlay.ga" class="dropbtn">Scout Troop</a>
+    <div class="dropdown-content">
+      <li class="dropdown">
+    </div>
+  </li>
 </ul>
+</body>
 </html>
